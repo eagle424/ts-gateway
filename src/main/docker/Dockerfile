@@ -9,8 +9,9 @@ WORKDIR /home
 RUN pwd
 
 # 复制文件
-ADD *.jar app.jar \
-    && entrypoint.sh entrypoint.sh
+ADD entrypoint.sh entrypoint.sh
+ADD *.jar app.jar
+
 # 赋权限
 RUN chmod -R 755 .
 
