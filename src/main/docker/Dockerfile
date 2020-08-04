@@ -6,6 +6,8 @@ ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
 
 WORKDIR /home
 
+RUN pwd
+
 # 复制文件
 ADD *.jar app.jar \
     && entrypoint.sh entrypoint.sh
