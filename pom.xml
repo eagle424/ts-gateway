@@ -426,6 +426,28 @@
                 <artifactId>properties-maven-plugin</artifactId>
             </plugin>
             <!-- jhipster-needle-maven-add-plugin -->
+
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                	<registryUrl>http://172.21.0.17:5000</registryUrl>
+                	<dockerHost>http://172.21.0.17:2375</dockerHost>
+                    <imageName>172.21.0.17:5000/jhipster-registry:${BUILD_NUMBER}</imageName>
+                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>
+            </plugin>
+
+
+
         </plugins>
         <pluginManagement>
             <plugins>
