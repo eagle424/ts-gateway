@@ -2,8 +2,7 @@ FROM openjdk:8u201-jre-alpine
 # 暴露端口
 EXPOSE 8080
 # 设置目录
-WORKDIR ~
-RUN pwd
+WORKDIR /app
 # 复制
 COPY entrypoint.sh entrypoint.sh
 COPY *.jar app.jar
