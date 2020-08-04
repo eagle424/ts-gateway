@@ -3,6 +3,7 @@ FROM openjdk:8u201-jre-alpine
 EXPOSE 8080
 # 设置目录
 WORKDIR ~
+RUN pwd
 # 复制
 COPY entrypoint.sh entrypoint.sh
 COPY *.jar app.jar
