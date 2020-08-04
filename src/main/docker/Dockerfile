@@ -6,9 +6,10 @@ WORKDIR /home
 
 RUN export SPRING_OUTPUT_ANSI_ENABLED=ALWAYS && \
     export JHIPSTER_SLEEP=0 && \
-    export JAVA_OPTS=" -Dspring.profiles.active=test -Dmaven.test.skip=true "  && \
-    cp entrypoint.sh entrypoint.sh  && \
-    cp *.jar app.jar && \
+    export JAVA_OPTS=" -Dspring.profiles.active=test -Dmaven.test.skip=true "
+RUN cp entrypoint.sh entrypoint.sh  && \
+
+RUN cp *.jar app.jar && \
     chmod -R 755 .
 
 # 复制文件
