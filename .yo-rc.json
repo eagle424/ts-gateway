@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.ba.gateway",
+      "nativeLanguage": "zh-cn"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "gateway",
+    "baseName": "gateway",
+    "packageName": "com.ba.gateway",
+    "packageFolder": "com/ba/gateway",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YTQxYTA2MjYzMWM1ZWRiMWVkNDJlN2Q4YzU4NDJhODM3ZDViOTMyZDdkN2M3NzZjOGUyMDRmMTliNzBmODNlMDExOGRiMzVlNjA1Mjc1YzZhY2M4MTRkNDUxOWQxZmM5YTQxY2ExNTM4MjI2ZmE3MGY2MGJkYTM4MTI5ZjQyYWU=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1596535752171,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "zh-cn",
+    "languages": ["zh-cn"],
+    "blueprints": []
+  }
+}
