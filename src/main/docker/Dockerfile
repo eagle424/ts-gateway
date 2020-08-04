@@ -10,7 +10,8 @@ COPY *.jar app.jar
 RUN export SPRING_OUTPUT_ANSI_ENABLED=ALWAYS &&\
     export JHIPSTER_SLEEP=0 &&\
     export JAVA_OPTS=" -Dspring.profiles.active=test -Dmaven.test.skip=true " &&\
-    chmod -R 755 . &&\
-    mv *.jar app.jar
+    mv *.jar app.jar &&\
+    chmod -R 755 .
+
 #
 ENTRYPOINT ["./entrypoint.sh"]
