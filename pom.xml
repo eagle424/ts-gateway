@@ -434,7 +434,7 @@
                 <configuration>
                 	<registryUrl>http://172.21.0.17:5000</registryUrl>
                 	<dockerHost>http://172.21.0.17:2375</dockerHost>
-                    <imageName>172.21.0.17:5000/jhipster-registry:${BUILD_NUMBER}</imageName>
+                    <imageName>172.21.0.17:5000/gateway:${BUILD_NUMBER}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
