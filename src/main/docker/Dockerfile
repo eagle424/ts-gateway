@@ -2,7 +2,7 @@ FROM openjdk:8u131-jre-alpine
 
 ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
     JHIPSTER_SLEEP=0 \
-    JAVA_OPTS=" -Dspring.profiles.active=test "
+    JAVA_OPTS=" -Dspring.profiles.active=test -Dmaven.test.skip=true "
 
 WORKDIR /home
 
